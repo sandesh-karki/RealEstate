@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
 
-// void main() {
-//   runApp(MyApp());
-// }
+class Home extends StatelessWidget {
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
           title: Text('My First App'),
         ),
@@ -30,12 +24,10 @@ class MyApp extends StatelessWidget {
                 color: Colors.amber[50],
                 child: Column(
                   children: <Widget>[
-                    Container(
-                      child: Text(
-                        'Search ',
-                        style: TextStyle(
-                            color: Colors.blue, fontWeight: FontWeight.bold),
-                      ),
+                    Text(
+                      'Search ',
+                      style: TextStyle(
+                          color: Colors.blue, fontWeight: FontWeight.bold),
                     ),
                     TextField(
                       decoration: InputDecoration(
@@ -47,7 +39,6 @@ class MyApp extends StatelessWidget {
                 )),
           ],
         ),
-      ),
-    );
+      );
   }
 }
